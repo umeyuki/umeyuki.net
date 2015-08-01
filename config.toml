@@ -1,0 +1,18 @@
+baseurl = "http://umeyuki.net"
+languageCode = "ja"
+title = "U & Me"
+author = "umeyuki"
+
+
+[params]
+  logo      = "/images/logo.jpg"
+  copyright = "umeyuki All rights reserved."
+  twitter   = "https://twitter.com/umeyuki"
+  github    = "https://github.com/umeyuki/"
+  email     = "umeyuki1326@gmail.com"
+  analytics = "UA-25074679-6"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
