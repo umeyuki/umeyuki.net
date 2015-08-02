@@ -5,7 +5,7 @@ draft = false
 tags = ["development"]
 +++
 
-herokuの勉強のため、twitterのbotを作成しました。
+herokuの勉強のため、twitterのbotを作成しました
 
 [umeyuki/ruby-ishiki-meter-bot](https://github.com/umeyuki/ruby-ishiki-meter-bot)
 
