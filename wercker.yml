@@ -2,7 +2,7 @@ box: wercker/default
 build:
     steps:
         - arjen/hugo-build:
-            version: 1.4.1
+            version: 1.3.0
             theme: uandme
             flags: --buildDrafts=true
 deploy:
