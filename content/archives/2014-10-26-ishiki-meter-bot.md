@@ -28,9 +28,7 @@ twitter上で発言した内容の意識が高い場合に[@ishikimeter](http://
 
 - アイデアをモレスキンノートに書き残した
 
-herokuすごい便利ですね。
 herokuの使い方は[ドットインストール](http://dotinstall.com/lessons/basic_heroku)で学びました。
-少し前にプレミアム会員になりました。文字起こしと中級レッスン素晴しいです。
 
 
 よかったら[意識メーターbot](http://twitter.com/ishikimeter)フォローしてみてくださいね!
