@@ -1,6 +1,7 @@
 #!/bin/sh
 
 git checkout deploy
+ git merge --no-commit branch_name
 hugo -t uandme
 git commit -am "Update content"
 git checkout master
