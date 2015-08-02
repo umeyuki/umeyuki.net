@@ -7,7 +7,7 @@ build:
         flags: --buildDrafts=false
 deploy:
   steps:
-    - lukevivier/gh-pages:
+    - umeyuki/gh-pages:
         token: $GIT_TOKEN
         domain: umeyuki.net
         basedir: public
