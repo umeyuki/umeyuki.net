@@ -1,6 +1,12 @@
 #!/bin/sh
 
-git checkout deploy
+git branch | grep deploy
+if [ "$?" -eq 0 ]
+then
+  git checkout deploy
+else
+  git checkout -b deploy
+fi
 git merge --no-commit develop
 hugo -t uandme
 git commit -am "Update content"
