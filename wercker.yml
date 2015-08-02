@@ -1,13 +1,14 @@
-box: wercker/default
+box: debian
 build:
-    steps:
-        - arjen/hugo-build@1.0.2:
-            theme: uandme
-            flags: --buildDrafts=false
+  steps:
+    - arjen/hugo-build:
+        version: 0.14
+        theme: uandme
+        flags: --buildDrafts=false
 deploy:
-    steps:
-        - lukevivier/gh-pages@0.2.1:
-            token: $GIT_TOKEN
-            basedir: public
-            domain: umeyuki.net
-            repo: umeyuki/umeyuki.github.io
+  steps:
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: umeyuki.net
+        basedir: public
+        repo: umeyuki/umeyuki.github.io
