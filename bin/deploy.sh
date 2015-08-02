@@ -13,4 +13,4 @@ git add .
 git commit -m "Update content"
 git push origin master -f
 echo "done."
-git checkout development
+git checkout develop
