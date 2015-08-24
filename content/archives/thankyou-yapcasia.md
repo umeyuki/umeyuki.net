@@ -5,8 +5,6 @@ title = "本当に最後だった #yapcasia エンジニアにしてくれてあ
 tags =  ["イベント"]
 +++
 
-<a data-flickr-embed="true" data-header="false" data-footer="false" data-context="false"  href="https://www.flickr.com/photos/68742489@N02/20656249990/in/dateposted-public/" title="yapcasia"><img src="https://farm6.staticflickr.com/5675/20656249990_dddf845e86.jpg" width="375" height="500" alt="yapcasia"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
 はじめに
 ---
 
