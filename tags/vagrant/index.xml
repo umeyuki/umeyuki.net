@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vagrant on U &amp; Me</title>
+    <link>http://umeyuki.net/tags/vagrant/</link>
+    <description>Recent content in Vagrant on U &amp; Me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 13 Sep 2014 22:44:00 +0900</lastBuildDate>
+    <atom:link href="http://umeyuki.net/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Macでvagrantを外付けHDDで動かす時の注意事項</title>
+      <link>http://umeyuki.net/archives/2014-09-13-vagrant-on-external-harddisk/</link>
+      <pubDate>Sat, 13 Sep 2014 22:44:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2014-09-13-vagrant-on-external-harddisk/</guid>
+      <description>
+
+&lt;p&gt;Macbook Airの容量がかなり圧迫されてきたので以下の記事を参考に
+Vagrantを外付けディスクに移行した。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://2inc.org/blog/2014/06/28/4311/&#34;&gt;MacBookAir の容量がきついので Vagrant 環境を外付けに移した話 | モンキーレンチ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;注意するべきこととして、外付けHDDをmac用にフォーマットしなければ
+ファイルの権限が変更できないためinsecure_private_keyが600にならず
+vagrant sshできない。&lt;/p&gt;
+
+&lt;p&gt;フォーマットの仕方は以下の記事を参照してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://toneliko.com/561/&#34;&gt;超簡単！外付けHDDを3分でMac用にフォーマットする方法を画像で解説 | トネリコBLOG&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;フォーマットしたらデータ消えてしまいます。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;外付けHDDはmac用にフォーマットする&lt;/li&gt;
+&lt;li&gt;~/.vagrant ~/.vagrant.d以下のデータを移す&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;上記の順番を守りましょう。&lt;/p&gt;
+
+&lt;p&gt;今回購入したのは以下の商品で、64G増設することができた。&lt;/p&gt;
+
+&lt;div class=&#34;amazlet-box&#34; style=&#34;margin-bottom:0px;&#34;&gt;&lt;div class=&#34;amazlet-image&#34; style=&#34;float:left;margin:0px 12px 1px 0px;&#34;&gt;&lt;a href=&#34;http://www.amazon.co.jp/exec/obidos/ASIN/B00I59UMW4/umeyuki0f-22/ref=nosim/&#34; name=&#34;amazletlink&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://ecx.images-amazon.com/images/I/41PRrxOjvZL._SL160_.jpg&#34; alt=&#34;Nifty 【MacBook Air 13インチ用】 MiniDrive Air (4GBマイクロSDカード付属 最大128GBまで対応) シルバー MD3-RP-AIRSR4G&#34; style=&#34;border: none;&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-info&#34; style=&#34;line-height:120%; margin-bottom: 10px&#34;&gt;&lt;div class=&#34;amazlet-name&#34; style=&#34;margin-bottom:10px;line-height:120%&#34;&gt;&lt;a href=&#34;http://www.amazon.co.jp/exec/obidos/ASIN/B00I59UMW4/umeyuki0f-22/ref=nosim/&#34; name=&#34;amazletlink&#34; target=&#34;_blank&#34;&gt;Nifty 【MacBook Air 13インチ用】 MiniDrive Air (4GBマイクロSDカード付属 最大128GBまで対応) シルバー MD3-RP-AIRSR4G&lt;/a&gt;&lt;div class=&#34;amazlet-powered-date&#34; style=&#34;font-size:80%;margin-top:5px;line-height:120%&#34;&gt;posted with &lt;a href=&#34;http://www.amazlet.com/&#34; title=&#34;amazlet&#34; target=&#34;_blank&#34;&gt;amazlet&lt;/a&gt; at 14.09.13&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-detail&#34;&gt;Nifty &lt;br /&gt;売り上げランキング: 4,710&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-sub-info&#34; style=&#34;float: left;&#34;&gt;&lt;div class=&#34;amazlet-link&#34; style=&#34;margin-top: 5px&#34;&gt;&lt;a href=&#34;http://www.amazon.co.jp/exec/obidos/ASIN/B00I59UMW4/umeyuki0f-22/ref=nosim/&#34; name=&#34;amazletlink&#34; target=&#34;_blank&#34;&gt;Amazon.co.jpで詳細を見る&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-footer&#34; style=&#34;clear: left&#34;&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&#34;amazlet-box&#34; style=&#34;margin-bottom:0px;&#34;&gt;&lt;div class=&#34;amazlet-image&#34; style=&#34;float:left;margin:0px 12px 1px 0px;&#34;&gt;&lt;a href=&#34;http://www.amazon.co.jp/exec/obidos/ASIN/B00CHHTOII/umeyuki0f-22/ref=nosim/&#34; name=&#34;amazletlink&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://ecx.images-amazon.com/images/I/51lJBOru7lL._SL160_.jpg&#34; alt=&#34;【Amazon.co.jp限定】Transcend microSDXCカード 64GB Class10 UHS-I対応 (無期限保証) TS64GUSDU1E (FFP)&#34; style=&#34;border: none;&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-info&#34; style=&#34;line-height:120%; margin-bottom: 10px&#34;&gt;&lt;div class=&#34;amazlet-name&#34; style=&#34;margin-bottom:10px;line-height:120%&#34;&gt;&lt;a href=&#34;http://www.amazon.co.jp/exec/obidos/ASIN/B00CHHTOII/umeyuki0f-22/ref=nosim/&#34; name=&#34;amazletlink&#34; target=&#34;_blank&#34;&gt;【Amazon.co.jp限定】Transcend microSDXCカード 64GB Class10 UHS-I対応 (無期限保証) TS64GUSDU1E (FFP)&lt;/a&gt;&lt;div class=&#34;amazlet-powered-date&#34; style=&#34;font-size:80%;margin-top:5px;line-height:120%&#34;&gt;posted with &lt;a href=&#34;http://www.amazlet.com/&#34; title=&#34;amazlet&#34; target=&#34;_blank&#34;&gt;amazlet&lt;/a&gt; at 14.09.13&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-detail&#34;&gt;トランセンド・ジャパン &lt;br /&gt;売り上げランキング: 12&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-sub-info&#34; style=&#34;float: left;&#34;&gt;&lt;div class=&#34;amazlet-link&#34; style=&#34;margin-top: 5px&#34;&gt;&lt;a href=&#34;http://www.amazon.co.jp/exec/obidos/ASIN/B00CHHTOII/umeyuki0f-22/ref=nosim/&#34; name=&#34;amazletlink&#34; target=&#34;_blank&#34;&gt;Amazon.co.jpで詳細を見る&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-footer&#34; style=&#34;clear: left&#34;&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;外付けHDDのデータが数ヶ月したら消えたって話をたまに聞く。
+消えても問題ないデータを移行しましょう。&lt;/p&gt;
+
+&lt;h4 id=&#34;まとめ:3288d06ea9199ecf5c9cadcf76c8e4fd&#34;&gt;まとめ&lt;/h4&gt;
+
+&lt;p&gt;外付けHDDはまずフォーマットしよう&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

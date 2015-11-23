@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hack on U &amp; Me</title>
+    <link>http://umeyuki.net/tags/hack/</link>
+    <description>Recent content in Hack on U &amp; Me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Sep 2013 08:00:00 +0900</lastBuildDate>
+    <atom:link href="http://umeyuki.net/tags/hack/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Google検索を使ってURLのエスケープ文字を簡単にデコードする方法</title>
+      <link>http://umeyuki.net/archives/2013-09-13-13080003/</link>
+      <pubDate>Fri, 13 Sep 2013 08:00:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2013-09-13-13080003/</guid>
+      <description>
+
+&lt;p&gt;このブログのメインテーマは「ウェブで食べていく方法についてのノウハウ」でした汗&lt;/p&gt;
+
+&lt;p&gt;今日は「URIエスケープ文字」を簡単にデコードする方法について書きます。
+URIエスケープ文字というのは以下のようなものです&lt;/p&gt;
+
+&lt;p&gt;[html]
+http://test.umeyuki.net/?search%5Bdate_range%5D=2013%2F09%2F01+-+2013%2F09%2F15
+[/html]&lt;/p&gt;
+
+&lt;p&gt;%5Bとかですね。
+ウェブサイトをスクレイピングする場合など、URI(http://test.umeyuki.net)やパラメータ(?search%5B=...)を調べる必要があります。
+その際に日本語や特殊な文字は、エスケープされるといって暗号のような文字になりサーバに送られます。&lt;/p&gt;
+
+&lt;p&gt;実際にプログラムを書く場合はエスケープされる前の文字で書いて、サーバで読める形式にして実行します。
+このエスケープ文字は本来どんな文字なのか?それを調べる方法は色々ありますが、今日はGoogle検索で手軽に調べてみようと思います!&lt;/p&gt;
+
+&lt;p&gt;手順は以下の通り!&lt;/p&gt;
+
+&lt;p&gt;1.エスケープしたい文字をコピーしておく
+&lt;a href=&#34;http://www.flickr.com/photos/68742489@N02/9728185049/&#34; title=&#34;Screen Shot 2013-09-12 at 7.29.59 PM by umeyuki1326, on Flickr&#34;&gt;&lt;img src=&#34;http://farm8.staticflickr.com/7332/9728185049_d5a51ab0c7.jpg&#34; width=&#34;500&#34; height=&#34;142&#34; alt=&#34;Screen Shot 2013-09-12 at 7.29.59 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2.Google検索で「Google」でもなんでも入力して検索&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/68742489@N02/9728185015/&#34; title=&#34;Screen Shot 2013-09-12 at 7.30.45 PM by umeyuki1326, on Flickr&#34;&gt;&lt;img src=&#34;http://farm6.staticflickr.com/5545/9728185015_1ae5de713e.jpg&#34; width=&#34;500&#34; height=&#34;185&#34; alt=&#34;Screen Shot 2013-09-12 at 7.30.45 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;3.検索結果が出たら、アドレスバーのurl「q=google」のgoogleを検索したいエスケープ文字で入力する&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/68742489@N02/9731410974/&#34; title=&#34;Screen Shot 2013-09-12 at 7.31.00 PM by umeyuki1326, on Flickr&#34;&gt;&lt;img src=&#34;http://farm4.staticflickr.com/3719/9731410974_17ee2f7b2d.jpg&#34; width=&#34;500&#34; height=&#34;169&#34; alt=&#34;Screen Shot 2013-09-12 at 7.31.00 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;4.検索結果にはエスケープされる前の文字が表示される&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/68742489@N02/9728184977/&#34; title=&#34;Screen Shot 2013-09-12 at 7.31.13 PM by umeyuki1326, on Flickr&#34;&gt;&lt;img src=&#34;http://farm3.staticflickr.com/2822/9728184977_376fb41cd3.jpg&#34; width=&#34;500&#34; height=&#34;169&#34; alt=&#34;Screen Shot 2013-09-12 at 7.31.13 PM&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;動画で解説:a25bc407a7330f56bdef0b56dca3a4c6&#34;&gt;動画で解説&lt;/h1&gt;
+
+&lt;p&gt;https://vimeo.com/74366518&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Youtubeをリピート再生する方法</title>
+      <link>http://umeyuki.net/archives/2013-05-19-19093023/</link>
+      <pubDate>Sun, 19 May 2013 09:30:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2013-05-19-19093023/</guid>
+      <description>&lt;p&gt;youtube.comをyoutuberepeat.comに変更するだけ。
+[ListenOnRepeat](http://www.listenonrepeat.com/ &#34;ListenOnRepeat&#34;)というサイトに転送されます(:&lt;/p&gt;
+
+&lt;p&gt;before:http://www.youtube.com/watch?v=VQbxVvKOjmQ&amp;amp;&lt;/p&gt;
+
+&lt;p&gt;↓&lt;/p&gt;
+
+&lt;p&gt;after:http://www.youtuberepeat.com/watch?v=VQbxVvKOjmQ&amp;amp;&lt;/p&gt;
+
+&lt;p&gt;https://vimeo.com/66482400&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iPod touch(iPhone)を無くす前にやっておきたい設定</title>
+      <link>http://umeyuki.net/archives/2013-05-10-10232102/</link>
+      <pubDate>Fri, 10 May 2013 23:21:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2013-05-10-10232102/</guid>
+      <description>
+
+&lt;p&gt;以前愛用しているiPod touchを無くしたました。(自宅のトイレに置いてた訳ですが&lt;/p&gt;
+
+&lt;p&gt;その時とても焦燥感に駆られました。
+なぜならiPod touchは僕が日常生活でメインに扱っているデバイスだったからです。&lt;/p&gt;
+
+&lt;p&gt;なによりメール・パスワード管理ツールが入っていたので焦りました。。
+パスワード管理ツールの「1password」には機密パスワードや銀行関連のパスワードもあります(インターネットバンク込み)&lt;/p&gt;
+
+&lt;p&gt;もし、この情報が漏れて僕の数少ない資産を失なうことになったらどうしよう....
+その焦りはこれまでの人生でも10本の指に入ります。&lt;/p&gt;
+
+&lt;p&gt;特に問題だったのは以下の3点。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リモート操作でデータを消去できない&lt;/li&gt;
+&lt;li&gt;パスコードロックが4桁&lt;/li&gt;
+&lt;li&gt;パスコードは何度間違えても入力できる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;つまり0000〜9999の1万回試せばロックは解除できてしまう訳です。&lt;/p&gt;
+
+&lt;p&gt;そのことを考えるとかなりのストレスを受けました。
+自分の機密情報が今盗まれてるかもしれないと思うと夜も眠れません。
+パスワードを変更すればすむ話ですが、その数は膨大で労力もかかります。&lt;/p&gt;
+
+&lt;p&gt;結果的にトイレで発見したため、九死に一生を得たわけですが、もう2度こんな思いはしたくないと思いました。&lt;/p&gt;
+
+&lt;p&gt;そこで行なったのは以下の2つ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;パスコードを6桁に変更&lt;/li&gt;
+&lt;li&gt;10回パスコードを間違えたらデータ消去&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;超簡単-iphoneのパスコードを4桁以外にする方法-by-nanapi:7cf8b5a429e19ef36aa601295c939c56&#34;&gt;超簡単！iPhoneのパスコードを4桁以外にする方法 by nanapi&lt;/h2&gt;
+
+&lt;p&gt;http://www.youtube.com/watch?v=LLIzKdKyd60&lt;/p&gt;
+
+&lt;h2 id=&#34;10回パスコードを間違えたらデータ消去:7cf8b5a429e19ef36aa601295c939c56&#34;&gt;10回パスコードを間違えたらデータ消去&lt;/h2&gt;
+
+&lt;p&gt;「設定」　＞　「一般」  &gt;  「パスコードロック」  &gt;   「データを消去」をオン&lt;/p&gt;
+
+&lt;p&gt;もちろんiPhoneにも使えるので、万が一に備えてやっておきたいですね(:
+無くしてはいけないものは最低限の保険を備えておきましょう!&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>インターネットで読めなくなった記事を読む方法</title>
+      <link>http://umeyuki.net/archives/2013-04-16-16223317/</link>
+      <pubDate>Tue, 16 Apr 2013 22:33:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2013-04-16-16223317/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/stuckincustoms/6756753669/&#34; title=&#34;Google Doodle by Stuck in Customs, on Flickr&#34;&gt;&lt;img src=&#34;http://farm8.staticflickr.com/7033/6756753669_a70948212b.jpg&#34; width=&#34;500&#34; height=&#34;314&#34; alt=&#34;Google Doodle&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;photo credit: &lt;a href=&#34;http://www.flickr.com/photos/stuckincustoms/6756753669/&#34; title=&#34;Stuck in Customs&#34;&gt;Stuck in Customs&lt;/a&gt; via &lt;a href=&#34;http://photopin.com&#34; title=&#34;photopin&#34;&gt;photopin&lt;/a&gt; &lt;a href=&#34;http://creativecommons.org/licenses/by-nc-sa/2.0/&#34; title=&#34;cc&#34;&gt;cc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;インターネットに存在するからといって、それは永遠に存在するわけではありません。&lt;/p&gt;
+
+&lt;p&gt;もはや手放せないほど便利なオンラインストレージである[Dropbox](http://db.tt/Gla1AtVA &#34;Dropbox&#34;)や[Amazon Gracier](http://aws.amazon.com/jp/glacier/ &#34;Amazon Gracier&#34;)を使っても「**データはいつか消える**」そう考えていたほうが自分のためになると思います。&lt;/p&gt;
+
+&lt;p&gt;下記のニュースを読んで、好きなブロガーが同類の内容について書いたブログエントリーを思い出しました。
+とても考えさせられた内容だったので、早速彼のブログを読むことにしました。&lt;/p&gt;
+
+&lt;p&gt;[志村けん＆ビートたけしの美談はデマ…グレート義太夫が否定 （シネマトゥデイ） - Yahoo!ニュース](http://headlines.yahoo.co.jp/hl?a=20130411-00000012-flix-movi &#34;志村けん＆ビートたけしの美談はデマ…グレート義太夫が否定 （シネマトゥデイ） - Yahoo!ニュース&#34;)&lt;/p&gt;
+
+&lt;p&gt;しかし、彼のブログは何らかの事情で現在非公開になっていて、読むことができませんでした。
+インターネットアーカイブの存在を思い出して利用することにしました。&lt;/p&gt;
+
+&lt;h1 id=&#34;インターネットアーカブの使い方:af2a43b34d0f6f74a42173aae96f4754&#34;&gt;インターネットアーカブの使い方&lt;/h1&gt;
+
+&lt;p&gt;1.[インターネットアーカイブ](http://www.archive.org/ &#34;インターネットアーカイブ&#34;)へアクセス&lt;/p&gt;
+
+&lt;p&gt;2.URLを入力&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/68742489@N02/8654227095/&#34; title=&#34;sushi_1 by umeyuki1326, on Flickr&#34;&gt;&lt;img src=&#34;http://farm9.staticflickr.com/8266/8654227095_23b19b8a11.jpg&#34; width=&#34;500&#34; height=&#34;100&#34; alt=&#34;sushi_1&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;3.カレンダーから日付を選択&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/68742489@N02/8655330278/&#34; title=&#34;sushi_2 by umeyuki1326, on Flickr&#34;&gt;&lt;img src=&#34;http://farm9.staticflickr.com/8118/8655330278_68bac656eb.jpg&#34; width=&#34;500&#34; height=&#34;233&#34; alt=&#34;sushi_2&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;4.アーカイブされた記事を読む&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/68742489@N02/8655330262/&#34; title=&#34;sushi_3 by umeyuki1326, on Flickr&#34;&gt;&lt;img src=&#34;http://farm9.staticflickr.com/8113/8655330262_0420949b1b.jpg&#34; width=&#34;500&#34; height=&#34;372&#34; alt=&#34;sushi_3&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;結果、該当記事をサルベージしてエントリーを読むことができました。
+データはいつか消えるとは思いますが、ウェブ上に公開されたデータが完全に消えるのは何百年か先の話かもしれませんな...&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on U &amp; Me</title>
+    <link>http://umeyuki.net/tags/tips/</link>
+    <description>Recent content in Tips on U &amp; Me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 26 Jan 2014 15:34:00 +0900</lastBuildDate>
+    <atom:link href="http://umeyuki.net/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ブログをmiddleman&#43;angularjsに移行しました</title>
+      <link>http://umeyuki.net/archives/2014-01-26-middleman-insted-of-wordpress/</link>
+      <pubDate>Sun, 26 Jan 2014 15:34:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2014-01-26-middleman-insted-of-wordpress/</guid>
+      <description>
+
+&lt;p&gt;本ブログをwordpressからmiddlemanへ移行しました。
+rubyの静的ファイルジェネレータ&lt;a href=&#34;http://middlemanapp.com/&#34;&gt;middleman&lt;/a&gt;をgithub pagesでホスティングしています。
+CSSフレームワークに&lt;a href=&#34;inuitcss.com&#34;&gt;inuitcss&lt;/a&gt;を採用し、angularjsを使ってブログの全文検索を実現しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;良くなったところ:7c40e74a953c0c4694083b6d2eebd71c&#34;&gt;良くなったところ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;普段使っているエディタで記事が書ける&lt;/li&gt;
+&lt;li&gt;タグ・タイトル・本文から記事を検索でき、ページ遷移しない&lt;/li&gt;
+&lt;li&gt;gitで記事を管理しているからバックアップの必要がない&lt;/li&gt;
+&lt;li&gt;カスタマイズが容易&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;使用している技術:7c40e74a953c0c4694083b6d2eebd71c&#34;&gt;使用している技術&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;middleman&lt;/li&gt;
+&lt;li&gt;angularjs&lt;/li&gt;
+&lt;li&gt;slim&lt;/li&gt;
+&lt;li&gt;inuitcss&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;移行までの工程を今後ブログに書きます。
+gi上記の技術に興味のある方は是非参照ください(:)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>httpdが起動できなくなったらSELinuxを疑う</title>
+      <link>http://umeyuki.net/archives/2013-05-25-25173121/</link>
+      <pubDate>Sat, 25 May 2013 17:31:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2013-05-25-25173121/</guid>
+      <description>&lt;p&gt;設定は間違ってのにhttpdが起動できなくなったらSELinuxが原因だったことが過去に2回ありました。&lt;/p&gt;
+
+&lt;p&gt;[bash]
+[root@vps ~]# /etc/init.d/httpd start
+httpd を起動中: httpd: Could not open configuration file /etc/httpd/conf/httpd.conf: Permission denied
+[/bash]&lt;/p&gt;
+
+&lt;p&gt;もしSELinux解除しても、よい環境なら設定ファイルを修正して試してみましょう。
+再起動が必要だったかは忘れました...&lt;/p&gt;
+
+&lt;p&gt;[bash]
+/etc/selinux/config
+SELINUX=enforcing
+↓
+SELINUX=disabled
+[/bash]&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>タスク管理を始めよう!  〜 頭の中身を紙に書き出す 〜</title>
+      <link>http://umeyuki.net/archives/2013-04-20-20161649/</link>
+      <pubDate>Sat, 20 Apr 2013 16:16:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2013-04-20-20161649/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/68742489@N02/8664027879/&#34; title=&#34;IMG_1413 by umeyuki1326, on Flickr&#34;&gt;&lt;img src=&#34;http://farm9.staticflickr.com/8249/8664027879_29aaf242fb.jpg&#34; width=&#34;500&#34; height=&#34;375&#34; alt=&#34;IMG_1413&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;タスク管理が苦手でいつも時間に終われています。
+1週間の予定もうまくたてられず、常に今何やるんだっけ?状態の毎日。&lt;/p&gt;
+
+&lt;p&gt;僕の能力が高くないと言えばそれまでですが、このまま死を向かえると「あれもやりたかった これもやりたかった」と後悔するでしょう。
+自分が向かっている方角に自信をもち、納期を守り、やりたいことに時間を費やせるよう今度こそモノにしたいと思います。&lt;/p&gt;
+
+&lt;p&gt;このシリーズでは試行錯誤しながら実践を通して自分にあったタスク管理を作りながら公開していきます。
+同じようにタスク管理に悩んでいる人の手助けになれば幸いです。&lt;/p&gt;
+
+&lt;h2 id=&#34;ベースはgtd:7b1199e51569936c5ca7f5fe4b3ce92d&#34;&gt;ベースはGTD&lt;/h2&gt;
+
+&lt;p&gt;すでに4回ぐらい挫折してますが、めげずにGTDにトライします。&lt;/p&gt;
+
+&lt;h3 id=&#34;gtdとは:7b1199e51569936c5ca7f5fe4b3ce92d&#34;&gt;GTDとは&lt;/h3&gt;
+
+&lt;p&gt;「やるべきこと・いつかやること・悩んでること」など頭の中にある情報を全て、手帳やタスク管理アプリなどのツールに集めて、
+いつでも参照できる環境を整え、その時すべきことに集中するタスク管理&lt;/p&gt;
+
+&lt;p&gt;GTDについてはtaguchiさん監修の本がおすすめです。&lt;/p&gt;
+
+&lt;p&gt;やりたいことがたくさんありすぎて身動きがとれないよ!って人におすすめです。&lt;/p&gt;
+
+&lt;div class=&#34;amazlet-box&#34; style=&#34;margin-bottom:0px;&#34;&gt;&lt;div class=&#34;amazlet-image&#34; style=&#34;float:left;margin:0px 12px 1px 0px;&#34;&gt;[はじめてのGTD ストレスフリーの整理術](http://www.amazon.co.jp/exec/obidos/ASIN/4576082116/umeyuki0f-22/ref=nosim/ &#34;はじめてのGTD ストレスフリーの整理術&#34;)&lt;div class=&#34;amazlet-powered-date&#34; style=&#34;font-size:80%;margin-top:5px;line-height:120%&#34;&gt;posted with [amazlet](http://www.amazlet.com/ &#34;amazlet&#34;) at 13.04.20&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-detail&#34;&gt;デビッド・アレン &lt;br /&gt;二見書房 &lt;br /&gt;売り上げランキング: 2,600&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-sub-info&#34; style=&#34;float: left;&#34;&gt;&lt;div class=&#34;amazlet-link&#34; style=&#34;margin-top: 5px&#34;&gt;[Amazon.co.jpで詳細を見る](http://www.amazon.co.jp/exec/obidos/ASIN/4576082116/umeyuki0f-22/ref=nosim/ &#34;Amazon.co.jpで詳細を見る&#34;)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;amazlet-footer&#34; style=&#34;clear: left&#34;&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;頭の中身を紙に書き出す:7b1199e51569936c5ca7f5fe4b3ce92d&#34;&gt;頭の中身を紙に書き出す&lt;/h2&gt;
+
+&lt;p&gt;まずはGTDの基本である、頭の中をからっぽにする作業をやります。
+紙とペンとトリガーリストを使います。&lt;/p&gt;
+
+&lt;h3 id=&#34;トリガーリスト:7b1199e51569936c5ca7f5fe4b3ce92d&#34;&gt;トリガーリスト?&lt;/h3&gt;
+
+&lt;p&gt;トリガーリストとは、頭の中にあるけど思い出せないことを思いだすための質問集です。
+僕が使っているリストを後悔します。&lt;/p&gt;
+
+&lt;h3 id=&#34;仕事のこと:7b1199e51569936c5ca7f5fe4b3ce92d&#34;&gt;仕事のこと&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;現在抱えているプロジェクトにはどんなものがありますか？&lt;/li&gt;
+&lt;li&gt;現在の仕事の目標は何ですか？&lt;/li&gt;
+&lt;li&gt;将来行うべきプロジェクトにはどのようなものがありますか？&lt;/li&gt;
+&lt;li&gt;机の上に何がありますか？&lt;/li&gt;
+&lt;li&gt;机の引き出しの中には何が入っていますか？&lt;/li&gt;
+&lt;li&gt;書類入れ、本棚、ロッカーやそのほか、あなたが管理している箇所にはどのようなものがありますか？&lt;/li&gt;
+&lt;li&gt;現在上司と約束（依頼）していることは何ですか？　約束（依頼）したいことは何ですか？&lt;/li&gt;
+&lt;li&gt;現在部下と約束（依頼）していることは何ですか？　約束（依頼）したいことは何ですか？&lt;/li&gt;
+&lt;li&gt;現在同僚と約束（依頼）していることは何ですか？　約束（依頼）したいことは何ですか？&lt;/li&gt;
+&lt;li&gt;現在取引先と約束（依頼）していることは何ですか？　約束（依頼）したいことは何ですか？&lt;/li&gt;
+&lt;li&gt;仕事の環境で変えたいことはありますか？&lt;/li&gt;
+&lt;li&gt;書かなくてはいけないメールがありますか？&lt;/li&gt;
+&lt;li&gt;処理しなくてはいけない書類がありますか？&lt;/li&gt;
+&lt;li&gt;かけなくてはいけない電話がありますか？&lt;/li&gt;
+&lt;li&gt;行わなくてはいけない会議はありますか？&lt;/li&gt;
+&lt;li&gt;会議に関して行わなくてはいけない作業がありますか？&lt;/li&gt;
+&lt;li&gt;給与について心配事がありますか？&lt;/li&gt;
+&lt;li&gt;キャリアプランについて心配事がありますか？&lt;/li&gt;
+&lt;li&gt;仕事上の直近のイベントにはどんなものがありますか？&lt;/li&gt;
+&lt;li&gt;習得したいスキルがありますか？&lt;/li&gt;
+&lt;li&gt;調査しなくてはいけないことがありますか？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;プライベートのこと:7b1199e51569936c5ca7f5fe4b3ce92d&#34;&gt;プライベートのこと&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;あなたの家を隅々まで思い浮かべてください。何かしなくてはいけないことがありますか？&lt;/li&gt;
+&lt;li&gt;あなたの将来の目標は何ですか？&lt;/li&gt;
+&lt;li&gt;あなたの現在の心配事は何ですか？&lt;/li&gt;
+&lt;li&gt;あなたは今誰かと何か約束していますか？&lt;/li&gt;
+&lt;li&gt;あなたは誰かと何かの約束をする必要がありますか？&lt;/li&gt;
+&lt;li&gt;今、あなたが欲しいものは何ですか？&lt;/li&gt;
+&lt;li&gt;プライベートの直近のイベントにはどんなものがありますか？&lt;/li&gt;
+&lt;li&gt;次の休みはどのように過ごしたいですか？&lt;/li&gt;
+&lt;li&gt;行ってみたい国はありますか？&lt;/li&gt;
+&lt;li&gt;会いたい人がいますか？&lt;/li&gt;
+&lt;li&gt;習得したいスキルはありますか？&lt;/li&gt;
+&lt;li&gt;習得したい言語はありますか？&lt;/li&gt;
+&lt;li&gt;健康に関して心配事がありますか？&lt;/li&gt;
+&lt;li&gt;家族に関して心配事がありますか？&lt;/li&gt;
+&lt;li&gt;友人、近所の方などに関して心配事がありますか？&lt;/li&gt;
+&lt;li&gt;見たいテレビ、映画がありますか？&lt;/li&gt;
+&lt;li&gt;修理しなくてはいけないものがありますか？&lt;/li&gt;
+&lt;li&gt;お金はきちんと管理されていますか？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;引用元は、「ストレスフリーの整理術 実践編」もしくはウェブです。忘れました汗
+タスク管理をこれからやるやらない関係なしに、1度やってみると頭がすっきりするのでおすすめですよ(:&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>mysqlで手軽に名前とメールアドレスをマスクするsql</title>
+      <link>http://umeyuki.net/archives/2013-04-07-07213525/</link>
+      <pubDate>Sun, 07 Apr 2013 21:35:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2013-04-07-07213525/</guid>
+      <description>&lt;p&gt;個人情報があるデータがあってそれをマスクしたい(架空の名前に変える)時のSQL&lt;/p&gt;
+
+&lt;p&gt;**before**&lt;/p&gt;
+
+&lt;p&gt;users&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+  &lt;th&gt;id&lt;/th&gt;
+  &lt;th&gt;name&lt;/th&gt;
+  &lt;th&gt;mail&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+  &lt;td&gt;1&lt;/td&gt;
+  &lt;td&gt;umeyuki&lt;/td&gt;
+  &lt;td&gt;umerin128@genmai.ne.jp&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;2&lt;/td&gt;
+  &lt;td&gt;zozo&lt;/td&gt;
+  &lt;td&gt;muchan@muchan.org&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;3&lt;/td&gt;
+  &lt;td&gt;kozu&lt;/td&gt;
+  &lt;td&gt;hiphop@panda.tv&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;4&lt;/td&gt;
+  &lt;td&gt;seco&lt;/td&gt;
+  &lt;td&gt;camera@secotasu.jp&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;[sql]
+update users
+  set
+    name = concat(&#39;user_&#39; , id),
+    mail = replace(mail,left(mail,instr(mail,&#39;@&#39;)- 1), concat(&#39;dummy_&#39;,id) );
+[/sql]&lt;/p&gt;
+
+&lt;p&gt;**after**&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+  &lt;th&gt;id&lt;/th&gt;
+  &lt;th&gt;name&lt;/th&gt;
+  &lt;th&gt;mail&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+  &lt;td&gt;1&lt;/td&gt;
+  &lt;td&gt;user_1&lt;/td&gt;
+  &lt;td&gt;dummy_1@genmai.ne.jp&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;2&lt;/td&gt;
+  &lt;td&gt;user_2&lt;/td&gt;
+  &lt;td&gt;dummy_2@muchan.org&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;3&lt;/td&gt;
+  &lt;td&gt;user_3&lt;/td&gt;
+  &lt;td&gt;dummy_3@panda.tv&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;4&lt;/td&gt;
+  &lt;td&gt;user_4&lt;/td&gt;
+  &lt;td&gt;dummy_4@secotasu.jp&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

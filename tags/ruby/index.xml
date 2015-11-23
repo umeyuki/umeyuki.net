@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on U &amp; Me</title>
+    <link>http://umeyuki.net/tags/ruby/</link>
+    <description>Recent content in Ruby on U &amp; Me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 12 Dec 2013 08:00:00 +0900</lastBuildDate>
+    <atom:link href="http://umeyuki.net/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>WikipediaのAV女優一覧をスクレイピング Ruby編</title>
+      <link>http://umeyuki.net/archives/2013-12-12-12080014/</link>
+      <pubDate>Thu, 12 Dec 2013 08:00:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2013-12-12-12080014/</guid>
+      <description>
+
+&lt;p&gt;Rubyの勉強も兼ねて2012年最も読まれたWikipedia記事の[AV女優一覧](http://ja.wikipedia.org/wiki/AV%E5%A5%B3%E5%84%AA%E4%B8%80%E8%A6%A7 &#34;AV女優一覧&#34;)をスクレイピングしてみました。&lt;/p&gt;
+
+&lt;p&gt;[Wikipedia日本語版で2012年に最も読まれた記事は「AV女優一覧」、英語版は「Facebook」 - GIGAZINE](http://gigazine.net/news/20121228-most-view-wikipedia-2012/ &#34;Wikipedia日本語版で2012年に最も読まれた記事は「AV女優一覧」、英語版は「Facebook」 - GIGAZINE&#34;)&lt;/p&gt;
+
+&lt;h2 id=&#34;スクレイピングの流れ:1ee79d9760dba7cae5fa441dce36fbad&#34;&gt;スクレイピングの流れ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;NokogiriのCSSセレクタでhtmlを解析する&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/AV%E5%A5%B3%E5%84%AA%E4%B8%80%E8%A6%A7&#34; title=&#34;AV女優一覧 - Wikipedia&#34;&gt;AV女優一覧 - Wikipedia&lt;/a&gt;の「あ行」から「ら・わ行」のリンクを取得&lt;/li&gt;
+&lt;li&gt;「あ行」ページから順に解析&lt;/li&gt;
+&lt;li&gt;女優のフルネーム・よみがな・名字よみ・名前よみを取得 正規表現の後方参照を使用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/umeyuki/ruby-wikipedia-pornstars&#34; title=&#34;umeyuki/ruby-wikipedia-pornstars&#34;&gt;umeyuki/ruby-wikipedia-pornstars&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;動画:1ee79d9760dba7cae5fa441dce36fbad&#34;&gt;動画&lt;/h2&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

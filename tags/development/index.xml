@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on U &amp; Me</title>
+    <link>http://umeyuki.net/tags/development/</link>
+    <description>Recent content in Development on U &amp; Me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 26 Oct 2014 19:42:00 +0900</lastBuildDate>
+    <atom:link href="http://umeyuki.net/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>意識の高いつぶやきをファボるbotを作った (対象はフォローワーのみ)</title>
+      <link>http://umeyuki.net/archives/2014-10-26-ishiki-meter-bot/</link>
+      <pubDate>Sun, 26 Oct 2014 19:42:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2014-10-26-ishiki-meter-bot/</guid>
+      <description>
+
+&lt;p&gt;herokuを勉強するため、twitterのbotを作成しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/umeyuki/ruby-ishiki-meter-bot&#34;&gt;umeyuki/ruby-ishiki-meter-bot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;twitter上で発言した内容の意識が高い場合に&lt;a href=&#34;http://twitter.com/ishikimeter&#34;&gt;@ishikimeter&lt;/a&gt;がファボります。
+不特定ではなく&lt;a href=&#34;http://twitter.com/ishikimeter&#34;&gt;@ishikimeter&lt;/a&gt;をフォローしているユーザのみが対象です&lt;/p&gt;
+
+&lt;p&gt;元ネタは&lt;a href=&#34;http://twitter.com/sugyan&#34;&gt;@sugyan&lt;/a&gt;さんの&lt;a href=&#34;https://twitter.com/genkidashitebot&#34;&gt;げんきだしてbot&lt;/a&gt;です。
+ほとんどコピペ汗&lt;/p&gt;
+
+&lt;p&gt;意識の高さ判定は独自のアルゴリズム(umeyuki選別意識高いワードをどれだけ含むか)を用いています。&lt;/p&gt;
+
+&lt;p&gt;飽きたら、フォローを外す・もしくはブロックすればファボらなくなります。&lt;/p&gt;
+
+&lt;h2 id=&#34;意識高い:c500ab8d8d47b09f5d58c5bae12a992b&#34;&gt;意識高い&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;金持ち父さん貧乏父さん読了&lt;/li&gt;
+&lt;li&gt;ストレスフリーGTDのタスク術&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;意識高くない:c500ab8d8d47b09f5d58c5bae12a992b&#34;&gt;意識高くない&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイデアをモレスキンノートに書き残した&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;herokuの使い方は&lt;a href=&#34;http://dotinstall.com/lessons/basic_heroku&#34;&gt;ドットインストール&lt;/a&gt;で学びました。&lt;/p&gt;
+
+&lt;p&gt;よかったら&lt;a href=&#34;http://twitter.com/ishikimeter&#34;&gt;意識メーターbot&lt;/a&gt;フォローしてみてくださいね!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

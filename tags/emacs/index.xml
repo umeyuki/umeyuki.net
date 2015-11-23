@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on U &amp; Me</title>
+    <link>http://umeyuki.net/tags/emacs/</link>
+    <description>Recent content in Emacs on U &amp; Me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 13 Dec 2013 08:00:00 +0900</lastBuildDate>
+    <atom:link href="http://umeyuki.net/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Emacsでコピーしてクリップボードで使う方法</title>
+      <link>http://umeyuki.net/archives/2013-12-13-13080028/</link>
+      <pubDate>Fri, 13 Dec 2013 08:00:00 +0900</pubDate>
+      
+      <guid>http://umeyuki.net/archives/2013-12-13-13080028/</guid>
+      <description>
+
+&lt;p&gt;Emacsで選択した文字をクリップボードで使えるpbcopy.elが便利です。&lt;/p&gt;
+
+&lt;h2 id=&#34;設定方法:28b0ee22a4763d87bd5712d6a705c3f5&#34;&gt;設定方法&lt;/h2&gt;
+
+&lt;p&gt;[emacs/pbcopy.el at master · wesen/emacs](https://github.com/wesen/emacs/blob/master/pbcopy.el &#34;emacs/pbcopy.el at master · wesen/emacs&#34;)&lt;/p&gt;
+
+&lt;p&gt;pbcopy.elをload-pathが通ったところに置いて以下の設定をinit.elに書くだけ。&lt;/p&gt;
+
+&lt;p&gt;[bash]
+(when (require &#39;pbcopy nil t)
+  (turn-on-pbcopy))
+[/bash]&lt;/p&gt;
+
+&lt;h2 id=&#34;動画:28b0ee22a4763d87bd5712d6a705c3f5&#34;&gt;動画&lt;/h2&gt;
+
+&lt;p&gt;https://vimeo.com/81716908&lt;/p&gt;
+
+&lt;p&gt;残念ながらMac限定です&gt;&amp;lt;&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

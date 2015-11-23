@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/custom.css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="U &amp; Me">
+<title>タイトルとURLをMarkdown記法で取得するためのブックマークレット - U &amp; Me</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="/"><img src="/images/logo.jpg" width="60" height="60"></a>
+		</div>
+		
+    <nav>
+      シェアハウス・三軒茶屋・健康 and more
+      <ul class="menu" style="display: none">
+        <li>自己紹介</li>
+        <li>作ったサービス</li>
+      </ul>
+    </nav>
+	</header>
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">タイトルとURLをMarkdown記法で取得するためのブックマークレット</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2013-04-28">April 28, 2013</time>
+      
+        
+         <a href="/tags/%E3%83%9D%E3%82%A8%E3%83%A0">#ポエム</a></span>
+			<section itemprop="entry-text">
+				
+
+<p>Markdown記法でブログを書く人向けのブックマークレットを作りました(:</p>
+
+<h2 id="マークダウン記法って何:059edcdc05dbfdbfd59239352c5a5d02">マークダウン記法って何?</h2>
+
+<p>htmlタグに変換できる文法のことです。</p>
+
+<p>ビジュアルエディターを使えば該当の文をドラッグしてクリックするだけで、見た目をデザインしてくれます。
+いちいちドラッグしてクリックするのではなく、全てキーボード入力で完結したい、だけどhtmlのタグを書くのが面倒な人のための記法です。</p>
+
+<pre>
+`
+# 大見出し
+↓
+&lt;h1&gt;大見出し&lt;/h1&gt;
+
+## 中見出し
+↓
+&lt;h2&gt;中見出し&lt;/h2&gt;
+
+### 小見出し
+↓
+&lt;h3&gt;小見出し&lt;/h3&gt;
+
+[U & Me](http://umeyuki.net)
+↓
+&lt;a href="http://umeyuki.net"&gt;U & Me&lt;/a&gt;
+`
+</pre>
+
+<p>Markdown記法はhtmlに変換できるためブログや電子書籍や発表スライドに使われます。</p>
+
+<p>id:koba04 さんの名スライド</p>
+
+<p>[プログラミング未経験のタワレコ店員がエンジニアになって思ったこと](http://koba04.com/slide/become_a_programmer/#/ "プログラミング未経験のタワレコ店員がエンジニアになって思ったこと")</p>
+
+<p>→を押せばスライドが動きます(:</p>
+
+<p>Markdownで書いておけば、後々色んなことに使い回せるので覚えておいて損はありません(:
+ブロガーがブログまとめを</p>
+
+<p>[blog::2310 » Markdown文法の全訳](http://blog.2310.net/archives/6 "blog::2310 » Markdown文法の全訳")</p>
+
+<h2 id="bookmarkletって何:059edcdc05dbfdbfd59239352c5a5d02">bookmarkletって何?</h2>
+
+<p>ブックマークリンクをおすと作動するJavaScriptプログラムのことです。</p>
+
+<p>Amazonのアフィリンクリンクを生成してくれるamazletがよい例です(:</p>
+
+<p>[amazlet (jp)](http://app.amazlet.com/amazlet/ "amazlet (jp)")</p>
+
+<h2 id="リンクの引用が面倒:059edcdc05dbfdbfd59239352c5a5d02">リンクの引用が面倒</h2>
+
+<p>ブログを書く時に、別のサイトをリンク付きで紹介したい場合があります。</p>
+
+<h3 id="ビジュアルエディタの場合:059edcdc05dbfdbfd59239352c5a5d02">ビジュアルエディタの場合</h3>
+
+<ul>
+<li>リンクのタイトルを記入 例) U &amp; ME</li>
+<li>リンク先へ移動してアドレスバーのリンクをコピー</li>
+<li>エディタに移動してタイトルをドラッグ</li>
+<li>ビジュアルエディタのlinkをクリック</li>
+<li>urlをペースト</li>
+<li>リンク追加を押す</li>
+</ul>
+
+<h3 id="マークダウン記法の場合:059edcdc05dbfdbfd59239352c5a5d02">マークダウン記法の場合</h3>
+
+<ul>
+<li>タイトルを記入 例) [U &amp; Me]</li>
+<li>リンク先へ移動してアドレスバーのリンクをコピー</li>
+<li>リンクを記入 例) <a href="http://umeyuki.net" title="U &amp;amp; Me">U &amp; Me</a></li>
+</ul>
+
+<p>マークダウン記法にすると若干ステップが減って楽ですね(:しかし、ブログを書き続けていくと、このステップですら面倒になります。</p>
+
+<h3 id="タイトルとurlをmarkdown記法で取得する:059edcdc05dbfdbfd59239352c5a5d02">タイトルとURLをMarkdown記法で取得する</h3>
+
+<p>紹介したいウェブページに行ってワンクリックで[U &amp; Me](http://umeyuki.net "U &amp; Me")の形式で文字列コピーするブックマークレットを作りました。
+↑にあるリンクをブックマークツールバーにドラックアンドドロップで登録して、ウェブページ上で押すと動作します。</p>
+
+<p>[title_link2markdown](javascript:window.prompt(%27%27,'\['+document.title+'\]\('+location.href +'\)')%3Bvoid(0)%3B "title_link2markdown")</p>
+
+<p>https://gist.github.com/umeyuki/5472198</p>
+
+<p>↓で紹介されてるget title linkブックマークレットを少し修正しただけですけどね!</p>
+
+<p>[指先ひとつでページのタイトルとURLをコピーしたい！ブックマークレットでその願い、叶えます♪ | oki2a24](http://oki2a24.com/2012/07/06/get-title-url-bookmarklet/ "指先ひとつでページのタイトルとURLをコピーしたい！ブックマークレットでその願い、叶えます♪ | oki2a24")</p>
+
+<p>[get title url](javascript:window.prompt(%27%27,document.title %2B%27 %27%2B location.href)%3Bvoid(0)%3B "get title url")</p>
+
+<p>Markdown記法でブログを書いている人は是非使ってみてください(:</p>
+
+<h2 id="スクリーンキャスト:059edcdc05dbfdbfd59239352c5a5d02">スクリーンキャスト</h2>
+
+<p>使い方の動画をvimeoにあげてみました(:今後はスクリーンキャストも揃えていく予定です。</p>
+
+<p>https://vimeo.com/64946338</p>
+
+<p>+++</p>
+
+			</section>
+		</article>
+	</main>
+  <section class="share">
+    <div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="@umeyuki" data-count="vertical">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+  <div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href=http%3a%2f%2fumeyuki.net%2farchives%2f2013-04-28-28080031%2f&width&layout=box_count&action=like&show_faces=false&share=false&height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:65px;" allowTransparency="true"></iframe></div>
+  <div class="pocket"><a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></div>
+  <div class="hatena"><a href="http://b.hatena.ne.jp/entry/http://umeyuki.net/archives/2013-04-28-28080031/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></div>
+</section>
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			<a href="https://twitter.com/umeyuki" target="_blank">Twitter</a></span>
+			
+			<a href="https://github.com/umeyuki/" target="_blank">GitHub</a></span>
+		</div>
+		<div class="copyright">Copyright &copy; umeyuki All rights reserved.</div>
+	</footer>
+
+</div>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-25074679-6', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+
