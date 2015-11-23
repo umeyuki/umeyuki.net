@@ -3,8 +3,8 @@ body {
   background-color: #FCFCFC;
 }
 
-h1 { font-size: 2.1rem; }
-h2 { font-size: 1.9rem; }
+h1 { font-size: 2.1rem; font-weight: bold; line-height: 34px;}
+h2 { font-size: 1.9rem; font-weight: bold; border-left: 2px solid #78b4d8; padding: 20px 0 20px 28px;}
 h3 { font-size: 1.7rem; }
 h4,
 h5,
