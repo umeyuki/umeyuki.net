@@ -44,7 +44,7 @@ export default function Layout({
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <h2>{subtTitle}</h2>
+            <h2 className="text-3xl font-bold underline">{subtTitle}</h2>
           </>
         ) : (
           <>
