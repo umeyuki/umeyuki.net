@@ -5,8 +5,8 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "umeyuki";
-const subtTitle = "気になること色々";
-export const siteTitle = "umeyuki.net";
+export const siteTitle = "明日こそブログ書く";
+export const description = "読書・健康・考えたことの書き残し";
 
 export default function Layout({
   children,
@@ -43,8 +43,7 @@ export default function Layout({
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <h2 className="text-3xl font-bold underline">{subtTitle}</h2>
+            <h1 className={utilStyles.headingXl}>{siteTitle}</h1>
           </>
         ) : (
           <>
