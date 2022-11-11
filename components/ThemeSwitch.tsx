@@ -7,7 +7,7 @@ import React from 'react';
  */
 
 const ThemeSwitch = (): JSX.Element => {
-  const [mounted, setMounted] = React.useState(false);
+  const [mounted, setMounted] = React.useState(true);
   const { theme, setTheme } = useTheme();
 
   // After mounting, we have access to the theme
