@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { MetaProps } from '../types/layout';
 import Head from './Head';
 import Navigation from './Navigation';
@@ -8,13 +9,24 @@ type LayoutProps = {
   customMeta?: MetaProps;
 };
 
-export const WEBSITE_HOST_URL = 'https://nextjs-typescript-mdx-blog.vercel.app';
+export const WEBSITE_HOST_URL = 'https://www.umeyuki.net';
 
 const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
     <>
       <Head customMeta={customMeta} />
+
       <header>
+        <div className="flex justify-start items-center p-4">
+          <Image
+            className="rounded-2xl"
+            src="/profile.jpeg"
+            alt="Profile Logo"
+            width={64}
+            height={64}
+          />
+          <h1 className="text-lg px-4">明日には忘れているだろう</h1>
+        </div>
         <div className="max-w-5xl px-8 mx-auto">
           <div className="flex items-center justify-between py-6">
             <Navigation />
@@ -26,12 +38,12 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
       </main>
       <footer className="py-8">
         <div className="max-w-5xl px-8 mx-auto">
-          Built by{' '}
+          Blogged by{' '}
           <a
             className="text-gray-900 dark:text-white"
-            href="https://twitter.com/hunterhchang"
+            href="https://twitter.com/umeyuki"
           >
-            Hunter Chang
+            umeyuki
           </a>
         </div>
       </footer>

@@ -2,7 +2,6 @@ import { format, parseISO } from 'date-fns';
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import React from 'react';
-import Image from 'next/image';
 import Layout from '../components/Layout';
 import { getAllPosts } from '../lib/api';
 import { PostType } from '../types/post';
@@ -14,11 +13,6 @@ type IndexProps = {
 export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
-      <header className="flex justify-center items-center">
-        <Image src="/profile.jpeg" alt="Profile Logo" width={64} height={64} />
-        <h1 className="text-lg">明日には忘れてる件</h1>
-      </header>
-      <p>Next.js starter for your next blog or personal site. Built with:</p>
       <ul className="list-disc pl-4 my-6">
         <li>Next.js</li>
         <li className="mt-2">Typescript</li>
