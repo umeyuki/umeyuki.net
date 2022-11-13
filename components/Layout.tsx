@@ -14,8 +14,9 @@ export const WEBSITE_HOST_URL = 'https://www.umeyuki.net';
 
 const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
   return (
-    <>
+    <div className="container mx-auto ">
       <Head customMeta={customMeta} />
+
       <header>
         <Link href="/">
           <a>
@@ -43,7 +44,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
         <div className="max-w-5xl px-8 mx-auto">{children}</div>
       </main>
       <footer className="py-8"></footer>
-    </>
+    </div>
   );
 };
 
