@@ -42,17 +42,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
       <main>
         <div className="max-w-5xl px-8 mx-auto">{children}</div>
       </main>
-      <footer className="py-8">
-        <div className="max-w-5xl px-8 mx-auto">
-          Blogged by{' '}
-          <a
-            className="text-gray-900 dark:text-white"
-            href="https://twitter.com/umeyuki"
-          >
-            umeyuki
-          </a>
-        </div>
-      </footer>
+      <footer className="py-8"></footer>
     </>
   );
 };

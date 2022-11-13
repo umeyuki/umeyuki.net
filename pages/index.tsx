@@ -13,11 +13,11 @@ type IndexProps = {
 export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
+      <h2>本ブログについて</h2>
       <ul className="list-disc pl-4 my-6">
-        <li>Next.js</li>
-        <li className="mt-2">Typescript</li>
-        <li className="mt-2">MDX</li>
-        <li className="mt-2">Tailwind CSS</li>
+        <li>趣味プロダクト開発日誌</li>
+        <li className="mt-2">少し役立つ麻雀戦略</li>
+        <li className="mt-2">渋谷1人暮らし</li>
       </ul>
 
       {posts.map((post) => (
@@ -32,7 +32,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
               </a>
             </Link>
           </h1>
-          <p className="mb-3">{post.description}</p>
+          <p className="mb-3">{post.content}</p>
           <p>
             <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
               <a>Read More</a>
@@ -45,8 +45,13 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts(['date', 'description', 'slug', 'title']);
-
+  const posts = getAllPosts([
+    'date',
+    'description',
+    'slug',
+    'title',
+    'content',
+  ]);
   return {
     props: { posts },
   };
