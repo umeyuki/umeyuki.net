@@ -22,6 +22,24 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
       <meta content={meta.description} name="description" />
       <meta property="og:url" content={`${WEBSITE_HOST_URL}${router.asPath}`} />
       <link rel="canonical" href={`${WEBSITE_HOST_URL}${router.asPath}`} />
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        href="/android-touch-icon-192x192.png"
+        sizes="192x192"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        href="/android-touch-icon-512x512.png"
+        sizes="512x512"
+      />
       <meta property="og:type" content={meta.type} />
       <meta property="og:site_name" content="umeyuki.net" />
       <meta property="og:description" content={meta.description} />
