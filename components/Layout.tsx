@@ -33,7 +33,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
             </div>
           </a>
         </Link>
-        <div className="max-w-5xl px-8 mx-auto">
+        <div className="max-w-5xl px-8">
           <div className="flex items-center justify-between py-6">
             <Navigation />
           </div>
